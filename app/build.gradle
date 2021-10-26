@@ -5,7 +5,9 @@ plugins {
 
 android {
     compileSdk 31
-
+    buildFeatures {
+        viewBinding = true
+    }
     defaultConfig {
         applicationId "com.fathi_ayari.tip_time"
         minSdk 21
@@ -14,9 +16,7 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        buildFeatures {
-            viewBinding = true
-        }
+
     }
 
     buildTypes {
